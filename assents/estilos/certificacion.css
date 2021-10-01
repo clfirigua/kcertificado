@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial Narrow;
+    --primario: #0090D4;
+    --secundario: #c2e013; 
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+}
+.cont_pdf{
+    width: 595px ;
+    height: 930px ;
+    background-color: white;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+.cabecera{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 50px;
+}
+.cabecera .img{
+    width: 25%;
+}
+.cabecera .img img{
+    width: 100%;
+}
+.cabecera .titulo{
+    width: 200px;
+}
+.lineas{
+    width: 95%;
+    background-color: var(--primario);
+    height: 5px;
+    margin-bottom: 0.5px;
+}
+.lineas2{
+    width: 100%;
+    padding-left: 5%;
+    margin-bottom: 10px;
+
+}
+.linea3{
+    width: 100%;
+    background-color: var(--secundario);
+    height: 5px;
+    margin-bottom: 0.5px;
+}
+.cert{
+    text-align: right;
+    /* background-color: blue; */
+    width: 100%;
+}
+.cabecera2{
+    /* background-color: blue; */
+    margin-top: 15px;
+    text-align: CENTER;
+}
+.tabla{
+    width: 70%;
+    height: 160px;
+    /* background-color: blue; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.tabla div{
+    width: 50%;
+    height: 20px;
+    border-top: 0px solid black;
+    border-right: 0px solid black;
+    border-bottom: 0.5px solid black;
+    border-left: 0.5px solid black;
+    padding-left: 10%;
+}
+
+.tabla .ttop{
+    border-top: 1px solid black;
+    /* background-color: blue; */
+}
+.tabla .trig{
+    border-right: 1px solid black;
+    display: flex;
+    /* background-color: blue; */
+}
+.cont_letra{
+    text-align: justify;
+    width: 100%;
+}
+.provedor{
+    width: 100%;
+    /* background-color: blue; */
+}
+.valides{
+    display: flex;
+    /* background-color: red; */
+    width: 100%;
+}
+.firma{
+    /* background-color: #0090D4; */
+    width: 100%;
+    height: 150px;
+}
+.firma img{
+    width: 150px;
+}
+.logos{
+    width: 100%;
+    height: 150px;
+    /* background-color: #94a72c; */
+    display: flex;
+    flex-direction: row;
+}
+.policia img{
+    width: 180px;
+}
+.tics img{
+    width: 100px;
+}
+.tics{
+    font-size: 8px;
+    color: rgb(30, 30, 128) ;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.logo_letras{
+    text-align: center;
+    font-size: 9px;
+    color: rgb(30, 30, 128) ;
+}

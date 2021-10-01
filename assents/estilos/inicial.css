@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --color1: #001729;
+    --color2: #003d5c;
+    --color3: #006e9a;
+    --color4: #00ace2;
+    --color5: #00f6ff;
+}
+.cuerpo{
+    background-color: var(--color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.cont{
+    align-self: center;
+    /* justify-content: center; */
+    width: 80%;
+    height: 80vh;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    /* text-align: center; */
+}

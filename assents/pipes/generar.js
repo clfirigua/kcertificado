@@ -1,0 +1,22 @@
+const $elementoParaConvertir = document.getElementById('documento');
+html2pdf()
+    .set({
+        margin: 1,
+        filename: 'Certificado.pdf',
+        image: {
+            type: 'jpeg',
+            quality: 0.98
+        },
+        html2canvas: {
+            scale: 3,
+            letterRendering: true,
+        },
+        jsPDF: {
+            unit: "in",
+            format: "a4",
+            orientation: 'portrait'
+        }
+    })
+    .from($elementoParaConvertir)
+    .save()
+    .catch(err => console.log(err));
