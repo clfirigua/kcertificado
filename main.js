@@ -69,26 +69,29 @@ const mostrar = (objs) =>{
         })
 }
 const buscar = (placa) =>{
-    
+    console.log(placa)
     datos((data) =>{
         data.forEach(obj =>{
             let t = obj.data();
-            console.log()
+            console.log(obj.data())
             if(t.Placa === placa){
                 let arreglo = {
                     clase:t.Clase,
                     marca:t.Marca,
                     serie:t.Serie,
                     motor:t.Motor,
-                    linea:t.Linea,
-                    unidad:t.Tipo,
-                    imei:t.Imei,
+                    linea:t.linea,
+                    unidad:t.unidad,
+                    imei:t.imei,
                     gps:t.gps,
-                    usurio: t.usuario,
+                    usurio: t.usurio,
                     ident:t.ident
                 }
-                localStorage.setItem(placa, JSON.stringify(arreglo))
-                // location.href = "assents/pages/certificacion.html";
+                localStorage.setItem('data2', 'data2')
+                localStorage.setItem('data', JSON.stringify(arreglo))
+                location.href = "assents/pages/certificacion.html";
+            }else{
+                alert('proximamente')
             }
         })
     })
